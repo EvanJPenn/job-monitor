@@ -1,0 +1,77 @@
+soup_targets:
+  Jump Trading: 
+    url: https://www.jumptrading.com/careers/?locations=London
+    job_selector_tag: a
+    job_selector_attr: 
+      'role': 'listitem'
+      'class': 'group'
+    title_selector_tag: p
+    title_selector_class: 'text-xl'
+    location_selector_tag: p
+    location_selector_class: text-base
+  Winton:
+    url: https://www.winton.com/opportunities
+    job_selector_tag: div
+    job_selector_attr: 
+      'class': 'flex flex-wrap justify-between gap-x-6 py-10'
+    title_selector_tag: h4
+    title_selector_class: text-mid-green pb-4
+    location_selector_tag: h5
+    location_selector_class: text-mid-green
+
+api_targets:
+  Jane Street:
+    url: "https://www.janestreet.com/jobs/main.json"
+    headers:
+      User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0"
+      Accept: "application/json, text/javascript, */*; q=0.01"
+      Accept-Language: "en-GB,en;q=0.5"
+      Accept-Encoding: "gzip, deflate, br, zstd"
+      X-Requested-With: "XMLHttpRequest"
+      Connection": "keep-alive"
+      Referer: "https://www.janestreet.com/join-jane-street/open-roles/?type=experienced-candidates&location=london"
+      Sec-Fetch-Dest: "empty"
+      Sec-Fetch-Mode: "cors"
+      Sec-Fetch-Site: "same-origin"
+      If-Modified-Since: "Fri, 03 Jan 2025 13:16:03 GMT"
+      If-None-Match: 'W/"6777e313-7a162"'
+      TE: "trailers"
+    title: position
+    location: city
+    link: null
+
+
+  Millennium:
+    url: "https://app.eightfold.ai/api/apply/v2/jobs/755937753296/jobs?domain=mlp.com"
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:133.0) Gecko/20100101 Firefox/133.0
+      Accept: "*/*"
+      Accept-Language: en-GB,en;q=0.5
+      Accept-Encoding: "gzip, deflate, br, zstd"
+      Referer: https://app.eightfold.ai/careers?location=London^%^2C^%^20England^%^2C^%^20United^%^20Kingdom&pid=755937753296&Skills=Machine^%^20Learning&Experience=professional&domain=mlp.com&sort_by=relevance
+      content-type: application/json
+      Alt-Used: app.eightfold.ai
+      Connection: keep-alive
+      Cookie: _vs=1550986346864002103:1685805602.601244:7433065710847387147; _vscid=3
+      Sec-Fetch-Dest: empty
+      Sec-Fetch-Mode: cors
+      Sec-Fetch-Site: same-origin
+      Priority: u=4
+      TE: trailers
+    key: positions
+    title: name
+    location: location
+    link: canonicalPositionUrl
+
+
+keywords:
+  - machine learning
+  - data scientist
+  - data science
+  - data engineer
+  - quantitative developer
+  - ML
+
+locations:
+  - London
+  - LDN
